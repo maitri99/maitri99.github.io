@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+
+<html class="no-js">
+    <head>
+        <!-- Basic Page Needs
+        ================================================== -->
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" href="favicon.ico">
+        <title>resume_parser@Maitri</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+        <!-- Template CSS Files
+        ================================================== -->
+        <!-- Twitter Bootstrs CSS -->
+        <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+        <!-- Ionicons Fonts Css -->
+        <link rel="stylesheet" href="plugins/ionicons/ionicons.min.css">
+        <!-- animate css -->
+        <link rel="stylesheet" href="plugins/animate-css/animate.css">
+        <!-- Hero area slider css-->
+        <link rel="stylesheet" href="plugins/slider/slider.css">
+        <!-- slick slider -->
+        <link rel="stylesheet" href="plugins/slick/slick.css">
+        <!-- Fancybox -->
+        <link rel="stylesheet" href="plugins/facncybox/jquery.fancybox.css">
+        <!-- hover -->
+        <link rel="stylesheet" href="plugins/hover/hover-min.css">
+        <!-- template main css file -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body> <!--
+        ==================================================
+        Header Section Start
+        ================================================== -->
+<section class="top-bar animated-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+ <!-- ==================================================
+       
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Pages
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="404.html">404 Page</a>
+                                    <a class="dropdown-item" href="gallery.html">Gallery</a>
+                                    <a class="dropdown-item" href="single-post.html">Single Post</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Blog
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="blog-fullwidth.html">Blog Full</a>
+                                    <a class="dropdown-item" href="blog-left-sidebar.html">Blog Left sidebar</a>
+                                    <a class="dropdown-item" href="blog-right-sidebar.html">Blog Right sidebar</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+ ================================================== -->
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<!--
+==================================================
+Global Page Section Start
+================================================== -->
+<section class="global-page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>Resume Parser</h2>
+          <div class="portfolio-meta">
+            <span>December 4, 2021</span>|
+            <span> Machine Learning based parsing solution</span>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/#Page header-->
+
+<!-- work details part start -->
+<section class="work-single">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- work single Content -->
+        <div class="work-single-content">
+         
+
+          <p>Many universities and student organizations collect resume books, containing hundreds of student resumes, to send out to different companies looking to hire. Recruiting team often recieve these resume books, 
+		which they then have to manually parse to catalog simple attributes about individuals, before doing a more detailed review for fit with the organization.
+		Companies would want to automate this initial step using machine learning. A machine learning-based resume parser will save recruiters from hours of work by eliminating manual processing 
+		and analysis for every resume they receive.</p>
+          <p>Our custom dataset consists of resumes from three resume books from graduate business schools such as Tuck School of Business at Dartmouth, Haas School of Business at Berekely,
+	     and Standard Graduate School of Business. In total, there are 841 resumes of MBA candidates. The Stanford university had 428 resumes, while Berekely had 212 and Dartmouth had 201 resumes. 
+	     There are 5 two page resumes with 2 from the Stanford resume book and 3 from the Dartmouth resume book. There is only one column-based resume from the Stanford resume book. 
+	     We anticipate that the predictions for the column-based resumes would have poor performance due to the lack of column-based resumes in our dataset.</p>
+
+	  <h4>Data Transformation</h4>
+	  <p> The resume books were in PDF format so they needed to be converted into images to function with the maskrcnn model. The individual resumes were saved as a.jpg file. 
+		From these resumes, we want to extract attributes about individuals such as education, work experience, skills, etc. Anything not included in any of these categories 
+		will be considered extra. Therefore, we annotated the images or create borders around these attributes, known as a bounding box, to generate the training dataset.</p>
+	  <p> In order to train the model, we need to extract the text from the resume, get the coordinates of the desired headers, determine what type of resume it is, and finally 
+		create and label the bounding boxes. After saving the bounding box coordinates in the annotation XML file corresponding to the respective resume, we are ready to train the model.</p>
+        
+	  <h4>Modeling</h4>
+
+          <p>Although our DataFrame has some features already created, we want to look at driver-level features that look at the driver's performance over the last few races in the season. We'll create one feature for qualifying performance and one feature for their performance in the actual race. </p>
+          <p> After we have all our features sorted, we will set up our data so we can use it for modeling. 
+	  For data splitting, since we are dealing with a forecasting problem, we need to ensure that we don't "look into the future" with our training sets. 
+	  To avoid this, we will split the data based on years. Our training data will be from 1983-2016 and the test set will include races from 2017-2020. </p>
+
+	  <h4>Model Creation</h4>
+
+	 <p>The modeling approach that we took to create the resume parsing model was to use MaskRCNN and EasyOCR to parse through the resumes and extract the information.
+		MaskRCNN is a pre-trained model generally used for object detection. We trained this model on the resumes available to us and used it to classify different 
+		portions of a resume using bounding boxes for each section of the resume, the weights that we used prior to training came from COCO dataset and are pretrained with 80 
+		different classes on about 330K images.
+
+		<br>Then for the text extraction part we used EasyOCR model which is an Optical Character Recognition model that is already trained on multiple languages (including english), 
+		has very high accuracy and it's very easy to use. </p>
+        
+	  <h4>Model Performance</h4>
+	 
+	<p> Upon thorough research,the best evaluation metric for an object segmentation model turned out to be mAP (Mean Average Precision). 
+	To get those metrics calculate the average precision for each class in your data based on your model predictions. Average precision is related to the area under the 
+	precision-recall curve for a class. Then we took the mean out of all those values so that we could find out the overall mAP of our model.
+
+	<br>To calculate the AP we used a function already included in MRCNN package called compute_ap: 
+	<br><b>mrcnn.utils.compute_ap(np.array(boxes), class_id, masks, pred['rois'],pred['class_ids'], pred['scores'],pred['masks'],iou_threshold=0.75)</b>
+	<br>The function takes in the ground truth boxes, ids and masks, as well as the predicted boxes, ids, masks and scores, and also a final parameter called <i>iou_threshold</i> which 
+	determines what's the threshold IoU (Intersect over Union) rate that categorizes a prediction as true or false. So we ran the metrics for three different IoUs to see 
+	how it affected the performance of the model, we ran on IoU = [0.75, 0.85, 0.95]</p>
+
+	<p>Before training, make sure to address the underperforming parts of the model i.e. column based resumes.</p>
+  
+	  <h4>Model Training</h4>
+	  <p> To actually train the model we used a couple of methods from MRCNN as well as wrote our own methods, so the first main thing we did was to expand the Dataset class that 
+		is defined in the MRCNN package so that we could load and work with our dataset, there are three methods being used:
+		<br>1. load_dataset: This method will load the dataset and based on the is_train parameter will make it into a training or validation set
+		<br>2. load_masks: This method creates the masks for each section based on the bounding box, it uses the extract_boxes method to get the desired values
+		<br>3. extract_boxes: A method that takes in a xml file and extract the important information, the bounding boxes described in the xml file
+		<br>Once that was defined we wrote a train_model() function to actually perform the training as you can see down below and then save the updated weights to the appropriate path.</p>
+
+	<p>A rough workflow to wrap it up! </p>
+
+	</div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+          <img src="images/about/rp1.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+          <img src="images/about/rp2.jpg" alt="">
+        </div>
+      </div>
+<!--
+      <div class="col-lg-12">
+        <a class="btn btn-dafault btn-work hvr-bounce-to-right" href="#">get this work</a>
+      </div> 
+-->
+    </div>
+  </div>
+</section>
+<!-- work details part end -->
+
+
+            <!--
+            ==================================================
+            Call To Action Section Start
+            ================================================== -->
+            <section id="call-to-action">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="block">
+                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">SO WHAT YOU THINK ?</h1>
+                               
+                                <a href="mailto:maitripatel1299@gmail.com" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact With Me</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>;
+            <!--
+            ==================================================
+            Footer Section Start
+            ================================================== -->
+            <footer id="footer">
+                <div class="container">
+                    <div class="row content-justify-between">
+                        <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+                            <p class="copyright">Copyright: Design and Developed by Maitri Patel
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <!-- Social Media -->
+                            <ul class="social text-center text-md-right text-lg-right">
+                          
+                                <li>
+                                    <a href="https://github.com/maitri99" class="Github">
+                                        <i class="ion-social-github"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/maitri-patel-7269bb148" class="Linkedin">
+                                        <i class="ion-social-linkedin"></i>
+                                    </a>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer> <!-- /#footer -->
+	<!-- Template Javascript Files
+	================================================== -->
+	<!-- jquery -->
+	<script src="plugins/jQurey/jquery.min.js"></script>
+	<!-- Form Validation -->
+    <script src="plugins/form-validation/jquery.form.js"></script> 
+    <script src="plugins/form-validation/jquery.validate.min.js"></script>
+	<!-- slick slider -->
+	<script src="plugins/slick/slick.min.js"></script>
+	<!-- bootstrap js -->
+	<script src="plugins/bootstrap/bootstrap.min.js"></script>
+	<!-- wow js -->
+	<script src="plugins/wow-js/wow.min.js"></script>
+	<!-- slider js -->
+	<script src="plugins/slider/slider.js"></script>
+	<!-- Fancybox -->
+	<script src="plugins/facncybox/jquery.fancybox.js"></script>
+	<!-- template main js -->
+	<script src="js/main.js"></script>
+ 	</body>
+</html>
