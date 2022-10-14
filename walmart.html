@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+
+<html class="no-js">
+    <head>
+        <!-- Basic Page Needs
+        ================================================== -->
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" href="favicon.ico">
+        <title>walmart-Sales-and-Analysis@Maitri</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+        <!-- Template CSS Files
+        ================================================== -->
+        <!-- Twitter Bootstrs CSS -->
+        <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+        <!-- Ionicons Fonts Css -->
+        <link rel="stylesheet" href="plugins/ionicons/ionicons.min.css">
+        <!-- animate css -->
+        <link rel="stylesheet" href="plugins/animate-css/animate.css">
+        <!-- Hero area slider css-->
+        <link rel="stylesheet" href="plugins/slider/slider.css">
+        <!-- slick slider -->
+        <link rel="stylesheet" href="plugins/slick/slick.css">
+        <!-- Fancybox -->
+        <link rel="stylesheet" href="plugins/facncybox/jquery.fancybox.css">
+        <!-- hover -->
+        <link rel="stylesheet" href="plugins/hover/hover-min.css">
+        <!-- template main css file -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body> <!--
+        ==================================================
+        Header Section Start
+        ================================================== -->
+<section class="top-bar animated-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+ <!-- ==================================================
+       
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Pages
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="404.html">404 Page</a>
+                                    <a class="dropdown-item" href="gallery.html">Gallery</a>
+                                    <a class="dropdown-item" href="single-post.html">Single Post</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Blog
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="blog-fullwidth.html">Blog Full</a>
+                                    <a class="dropdown-item" href="blog-left-sidebar.html">Blog Left sidebar</a>
+                                    <a class="dropdown-item" href="blog-right-sidebar.html">Blog Right sidebar</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+ ================================================== -->
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<!--
+==================================================
+Global Page Section Start
+================================================== -->
+<section class="global-page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>Walmart Sales and Analysis</h2>
+          <div class="portfolio-meta">
+            <span>December 20, 2020</span>|
+            <span> Category: Forecasting</span>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/#Page header-->
+
+<!-- work details part start -->
+<section class="work-single">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- work single Content -->
+        <div class="work-single-content">
+
+          <p>This project focuses on analysis and prediction of sales patterns of one of the leading retail corporations - Walmart. The dataset has been retrieved from Kaggle 
+	     and ranges from 2010 to 2012. Walmart released anonymized weekly sales data of 45 stores located in different regions. Since it was anonymized, we don't have a proper address for any stores and hence we will 
+	     address the stores numerically throughout the project. The dataset contains information about the stores, temperature, unemployment, CPI, Holiday, fuel price, and Weekly sales.
+
+             The purpose of this project is to show how simple Machine Learning algorithms can forecast the sales which can help avoid the challenges like running out of stock due to unforeseen demands.</p>
+
+	  <h4>Exploratory Data Analysis</h4>
+	  <p> A Boxplot to see where the most concentration of the weekly sales lie and to see if there are any outliers.</p>
+
+		<p> Use a groupby of "stores" and "Weekly sales" to find out which is the best performing store. Check out some statistical methods to point out the max standard
+		deviation in particular sales or quarterly growth of the sales.</p>
+	  
+	  <h5>Are more products sold in hotter weather?</h5>
+	  <p>Let's find an answer using CDFs (cumulative distribution functions) and correlations. We will use CDF as we are analyzing a general distribution.
+      <div class="col-md-4 col-sm-6">
+        <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+          <img src="images/about/w2.jpg" alt="">
+        </div>
+      </div>
+CDF says that the moderate climate is more preferable for selling huge amounts of goods.</p>
+        
+	 
+
+          <p>Further, plot the line graph similarly to see sales with and without holidays. More interesting will be to plot bars for the store that has highest sales in holiday!</p>
+        
+
+ 		<p>Time to predict whether the given sales record belongs to holiday or not. Split the dataset into training and testing dataset. Train with different models. Since it's seasonal data, let's first pick Arima model.
+      <div class="col-md-4 col-sm-6">
+        <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+          <img src="images/about/w3.jpg" alt="">
+        </div>
+      </div>
+	Close enough ....Let's try out some more models: Logistic Regression, Desicion Tree, KNeighborsRegressor, RandomForestRegressor, ExtraTreesRegressor, and compare the model accuracy.
+      <div class="col-md-4 col-sm-6">
+        <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+          <img src="images/about/w4.jpg" alt="">
+        </div>
+      </div>
+	Also, from the error calculations, errors here will be much low as compared to any individual model. Looks like getting average gives the best results and helps in reducing loss.
+ </p>
+
+	  <h4>Conclusion</h4>
+
+	 <p>We gathered the data of how holidays impact the sales. Sales weighted five times higher during the week of four most renown holidays: Thanksgiving, Christmas, Labor Day and 
+	Super Bowl. When it comes to predicting the model for sales and demand, the best model so far to predict Walmart’s sales and demand criteria is Random Forest Regressor. 
+	However rather than operating with individual models, this trick of simply averaging may reduce the loss to a great extent. Especially when we have the data of 20,000 Walmart 
+	stores from all across the countries!
+</p>
+        
+
+	</div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+          <img src="images/about/w1.jpg" alt="">
+        </div>
+      </div>
+
+<!--
+      <div class="col-lg-12">
+        <a class="btn btn-dafault btn-work hvr-bounce-to-right" href="#">get this work</a>
+      </div> 
+-->
+    </div>
+  </div>
+</section>
+<!-- work details part end -->
+
+
+            <!--
+            ==================================================
+            Call To Action Section Start
+            ================================================== -->
+            <section id="call-to-action">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="block">
+                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">SO WHAT YOU THINK ?</h1>
+                               
+                                <a href="mailto:maitripatel1299@gmail.com" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact With Me</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>;
+            <!--
+            ==================================================
+            Footer Section Start
+            ================================================== -->
+            <footer id="footer">
+                <div class="container">
+                    <div class="row content-justify-between">
+                        <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+                            <p class="copyright">Copyright: Design and Developed by Maitri Patel
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <!-- Social Media -->
+                            <ul class="social text-center text-md-right text-lg-right">
+                          
+                                <li>
+                                    <a href="https://github.com/maitri99" class="Github">
+                                        <i class="ion-social-github"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/maitri-patel-7269bb148" class="Linkedin">
+                                        <i class="ion-social-linkedin"></i>
+                                    </a>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer> <!-- /#footer -->
+	<!-- Template Javascript Files
+	================================================== -->
+	<!-- jquery -->
+	<script src="plugins/jQurey/jquery.min.js"></script>
+	<!-- Form Validation -->
+    <script src="plugins/form-validation/jquery.form.js"></script> 
+    <script src="plugins/form-validation/jquery.validate.min.js"></script>
+	<!-- slick slider -->
+	<script src="plugins/slick/slick.min.js"></script>
+	<!-- bootstrap js -->
+	<script src="plugins/bootstrap/bootstrap.min.js"></script>
+	<!-- wow js -->
+	<script src="plugins/wow-js/wow.min.js"></script>
+	<!-- slider js -->
+	<script src="plugins/slider/slider.js"></script>
+	<!-- Fancybox -->
+	<script src="plugins/facncybox/jquery.fancybox.js"></script>
+	<!-- template main js -->
+	<script src="js/main.js"></script>
+ 	</body>
+</html>
