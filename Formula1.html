@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+
+<html class="no-js">
+    <head>
+        <!-- Basic Page Needs
+        ================================================== -->
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" href="favicon.ico">
+        <title>F1@Maitri</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+        <!-- Template CSS Files
+        ================================================== -->
+        <!-- Twitter Bootstrs CSS -->
+        <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+        <!-- Ionicons Fonts Css -->
+        <link rel="stylesheet" href="plugins/ionicons/ionicons.min.css">
+        <!-- animate css -->
+        <link rel="stylesheet" href="plugins/animate-css/animate.css">
+        <!-- Hero area slider css-->
+        <link rel="stylesheet" href="plugins/slider/slider.css">
+        <!-- slick slider -->
+        <link rel="stylesheet" href="plugins/slick/slick.css">
+        <!-- Fancybox -->
+        <link rel="stylesheet" href="plugins/facncybox/jquery.fancybox.css">
+        <!-- hover -->
+        <link rel="stylesheet" href="plugins/hover/hover-min.css">
+        <!-- template main css file -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body> <!--
+        ==================================================
+        Header Section Start
+        ================================================== -->
+<section class="top-bar animated-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+ <!-- ==================================================
+       
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Pages
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="404.html">404 Page</a>
+                                    <a class="dropdown-item" href="gallery.html">Gallery</a>
+                                    <a class="dropdown-item" href="single-post.html">Single Post</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Blog
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="blog-fullwidth.html">Blog Full</a>
+                                    <a class="dropdown-item" href="blog-left-sidebar.html">Blog Left sidebar</a>
+                                    <a class="dropdown-item" href="blog-right-sidebar.html">Blog Right sidebar</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+ ================================================== -->
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<!--
+==================================================
+Global Page Section Start
+================================================== -->
+<section class="global-page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>Formula 1 Race Predictor</h2>
+          <div class="portfolio-meta">
+            <span>May 12, 2021</span>|
+            <span> Category: Data modelling and prediction</span>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/#Page header-->
+
+<!-- work details part start -->
+<section class="work-single">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- work single Content -->
+        <div class="work-single-content">
+          <h3>Machine Learning based approach to predict the winner</h3>
+
+          <p>I knew nothing about Formula 1 before this project. My teammate however, was a huge fan of F1 and a RedBull enthusiast. After this project, I would find myself curled up on the couch and cheering and screaming at every GP until the very end of the race. This project was a real fun!
+	     As opposed to other forms of racing, the cars on the F1 grid are all different, leading to varying levels of performance. Each F1 team puts in millions of dollars into the development and creation of their car and its parts. As a result, the teams with more money often have more success. Additionally, its obvious to see that drivers also play an important role in being successful in the sport.
+
+  	     The goal of this project is to predict the drivers who place in the top 3 each race. Because we are trying to predict whether or not a driver will be in the top 3 at the end of the race, we will be creating classification models.
+
+             The target audience of this modeling project is the bettors who will be able to use it on a race weekend. Our hope is that instead of people betting random drivers or just the top 3 people from qualifiers, they will be able to use this model and have a better chance at betting on the right combination of drivers.</p>
+          <p>This project will be split into five parts: Data Import and EDA, Feature Selection, Modeling Approaches, Model Performance, and Analysis.</p>
+
+	  <h4>EDA</h4>
+	  <p> Our data contains race information from the 662 F1 races that took place between 1983 and 2020. This data was originally pulled from the Formula 1 website and ergast.com, an experimental Motor Racing Developer API. Once the data was imported, we created one big DataFrame, preprocessed the data, and started some feature selection. </p>
+
+	  <p> For EDA, we threw some correlation plots to show how does performing at your home country or your team's home country impact a driver's performance. We can take Lewis Hamilton for example. Hamilton is British and races at his home track of Silverstone. A line graph can show that Lewis Hamilton has generally performed really well at his home track, and has been pretty consistent over the past few years.</p>
+        
+	  <h4>Feature Selection</h4>
+
+  <!-- Blockquote 
+          <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore
+            et
+            dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo.</blockquote> -->
+
+          <p>Although our DataFrame has some features already created, we want to look at driver-level features that look at the driver's performance over the last few races in the season. We'll create one feature for qualifying performance and one feature for their performance in the actual race. </p>
+          <p> After we have all our features sorted, we will set up our data so we can use it for modeling. 
+	  For data splitting, since we are dealing with a forecasting problem, we need to ensure that we don't "look into the future" with our training sets. 
+	  To avoid this, we will split the data based on years. Our training data will be from 1983-2016 and the test set will include races from 2017-2020. </p>
+
+	  <h4>Model Creation</h4>
+
+	 <p>The models that will be looked at are Baseline Random Predictor, logistic regression, decision tree classification, random forest classification, and a Neural Network.
+	    Baseline Random Predictor chooses three random drivers from each race and predicts them as the winner. For Logistic regression, we fine tuned our hyperparameters using GridSearchCV which helped us create a better performing model.
+	    In addition to our best estimators, we added a sampling weight to the regression to help balance the predictions. Then we fit the model and start making predictions. Predictions are stored in a nested array. Each prediction has a prediction probability of being 0 and being 1. 
+	    Probability of being a 1 will be used in our models. For Random Forest, we added hyperparameter optimization to this model. Finally we created a Neural Network, a sequential model, and added in batch normalization and some dropout to avoid overfitting. This helps because our data set is relatively small.</p>
+        
+	  <h4>Model Performance</h4>
+	 
+	<p> We would look at the accuracy and loss from the training and test sets. We want to ensure that our accuracy increased and our loss decreased as our model was being trained.
+	    We would also look at the feature importance of this model which tells how important starting grid position is. </p>
+  
+	  <h4>Model Analysis</h4>
+	  <p> We compared the models to each other using a bar graph with the bars sorted from lowest to highest precision. We sorted the values because all of our models have a very similar precision score. The plot below depicts logistic regression to be the best performing model, narrowly beating out the rest of the classification models.</p>
+	<p>Through our models, we determined that the logistic regression yielded the most precise predictions.
+	Given that we used a relatively small dataset, we had to limit the training and testing of each model.
+	As a result, it is hard to gauge how this model can be deployed outside of a casual setting. 
+	Additionally, F1 consistently has changes to their regulations so different teams or drivers can quickly improve or decline and cause a large shift in our data. </p>
+
+	</div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+          <img src="images/about/f1grid.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+          <img src="images/about/f1.jpg" alt="">
+        </div>
+      </div>
+<!--
+      <div class="col-lg-12">
+        <a class="btn btn-dafault btn-work hvr-bounce-to-right" href="#">get this work</a>
+      </div> 
+-->
+    </div>
+  </div>
+</section>
+<!-- work details part end -->
+
+
+            <!--
+            ==================================================
+            Call To Action Section Start
+            ================================================== -->
+            <section id="call-to-action">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="block">
+                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">SO WHAT YOU THINK ?</h1>
+                               
+                                <a href="mailto:maitripatel1299@gmail.com" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact With Me</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>;
+            <!--
+            ==================================================
+            Footer Section Start
+            ================================================== -->
+            <footer id="footer">
+                <div class="container">
+                    <div class="row content-justify-between">
+                        <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+                            <p class="copyright">Copyright: Design and Developed by Maitri Patel
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <!-- Social Media -->
+                            <ul class="social text-center text-md-right text-lg-right">
+                          
+                                <li>
+                                    <a href="https://github.com/maitri99" class="Github">
+                                        <i class="ion-social-github"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/maitri-patel-7269bb148" class="Linkedin">
+                                        <i class="ion-social-linkedin"></i>
+                                    </a>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer> <!-- /#footer -->
+	<!-- Template Javascript Files
+	================================================== -->
+	<!-- jquery -->
+	<script src="plugins/jQurey/jquery.min.js"></script>
+	<!-- Form Validation -->
+    <script src="plugins/form-validation/jquery.form.js"></script> 
+    <script src="plugins/form-validation/jquery.validate.min.js"></script>
+	<!-- slick slider -->
+	<script src="plugins/slick/slick.min.js"></script>
+	<!-- bootstrap js -->
+	<script src="plugins/bootstrap/bootstrap.min.js"></script>
+	<!-- wow js -->
+	<script src="plugins/wow-js/wow.min.js"></script>
+	<!-- slider js -->
+	<script src="plugins/slider/slider.js"></script>
+	<!-- Fancybox -->
+	<script src="plugins/facncybox/jquery.fancybox.js"></script>
+	<!-- template main js -->
+	<script src="js/main.js"></script>
+ 	</body>
+</html>
