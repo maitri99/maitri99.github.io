@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+
+<html class="no-js">
+    <head>
+        <!-- Basic Page Needs
+        ================================================== -->
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" href="favicon.ico">
+        <title>chocolate-bar-ratings@Maitri</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+        <!-- Template CSS Files
+        ================================================== -->
+        <!-- Twitter Bootstrs CSS -->
+        <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+        <!-- Ionicons Fonts Css -->
+        <link rel="stylesheet" href="plugins/ionicons/ionicons.min.css">
+        <!-- animate css -->
+        <link rel="stylesheet" href="plugins/animate-css/animate.css">
+        <!-- Hero area slider css-->
+        <link rel="stylesheet" href="plugins/slider/slider.css">
+        <!-- slick slider -->
+        <link rel="stylesheet" href="plugins/slick/slick.css">
+        <!-- Fancybox -->
+        <link rel="stylesheet" href="plugins/facncybox/jquery.fancybox.css">
+        <!-- hover -->
+        <link rel="stylesheet" href="plugins/hover/hover-min.css">
+        <!-- template main css file -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body> <!--
+        ==================================================
+        Header Section Start
+        ================================================== -->
+<section class="top-bar animated-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+ <!-- ==================================================
+       
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Pages
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="404.html">404 Page</a>
+                                    <a class="dropdown-item" href="gallery.html">Gallery</a>
+                                    <a class="dropdown-item" href="single-post.html">Single Post</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Blog
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="blog-fullwidth.html">Blog Full</a>
+                                    <a class="dropdown-item" href="blog-left-sidebar.html">Blog Left sidebar</a>
+                                    <a class="dropdown-item" href="blog-right-sidebar.html">Blog Right sidebar</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+ ================================================== -->
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<!--
+==================================================
+Global Page Section Start
+================================================== -->
+<section class="global-page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>Chocolate Bar Ratings</h2>
+          <div class="portfolio-meta">
+            <span>April 14, 2021</span>|
+            <span> Category: Data Preprocessing and EDA</span>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/#Page header-->
+
+<!-- work details part start -->
+<section class="work-single">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="">
+        <!-- work single Content -->
+        <div class="work-single-content">
+
+          <p>In order to explore the data and visualize it, some changes might need to be made to the data along the way. This is often referred to as <i>data preprocessing</i>.
+	     Though EDA is technically different from data preprocessing, EDA often exposes problems with the data that need to be fixed in order to continue exploring. Because of this 
+	     tight overlap, we'll clean the data as per the needs to help understand the data.
+	     <br> This project uses Pandas knowledge to explore a dataset about chocolate. I will explore each column in our dataset individually as well as take the results of our 
+	      preprocessed data and search for patterns across columns and rows. This project uses a <a href="https://www.kaggle.com/datasets/rtatman/chocolate-bar-ratings">chocolate bar ratings</a> dataset from Kaggle. 
+	      The dataset is from the <a href="https://flavorsofcacao.com/flavor.html">Flavors of Cacao</a> data.
+	<div class="col-md-4 col-sm-6">
+        <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+          <img src="images/about/c1.jpg" alt="">
+        </div>
+      </div></p>
+          <p>There are 1,795 rows and 9 columns in the dataset. Acquire the data on your machine and run a quick fact check. You will see that the data seems to be sorted by the 'Company' column.
+	     There is definitely some missing data in the 'Bean Type' column. One of the more frustrating aspects of this dataset is the poor format of the column names. Typing 'Specific Bean Origin\nor Bar Name' in order
+	     to access the column is painful. So our first step would be to modify column names! Then, you will notice that the columns are also in an odd order. Information about the 
+	     company is spread across the columns, and so is the information about the cacao bean. Hence, we should order the columns a little more meaningfully according to the Company Information, Chocolate Bar Information, and Review Information.
+	     We can reorder the columns by specifically selecting the columns in order and reassigning them to the dataframe variable</p>
+
+	  <h4>Examining Each Column</h4>
+	  <p> The 'Company' column is the first in the list, so let's check it out first. We can tell that the column contains string values. See if we have any missing values and the amount of distinct values. Upon checking, 
+	      we will notice that this is some interesting data. Looking at it raises many questions. For instance:
+
+	<br>Should company names like 'Vintage Plantations' and 'Vintage Plantations (Tulicorp)' be changed to the same name?
+	<br>Is 'Cacao de Origin' a misspelling of 'Cacao de Origen'?
+	<br>Is 'Shattel' a misspelling of 'Shattell'?
+	<br>These are some things we see and questions we ask when we encounter a new dataset. Rarely is the data in perfect condition. Often we spend a significant amount of time researching topics related to the data in order to make a call about modifying aspects of the data.
+	<br>In this particular project, we could cross reference the names in the dataset with the names in the master list provided, we find a master list of all of the chocolate makers 
+	in the world. Unfortunately, we don't have a master list of chocolate makers. Instead, we will have to manually inspect the data and research when things don't look right. For example, fixing the misspellings.</p>
+	  
+	
+	  <p>Now, let's move into data about the cocoa going into the chocolate bar itself. The first piece of data is the 'Bean Type' which is defined as "The variety (breed) of bean used, if provided". This prevails that there will be some missing data.
+		<br>Upon checking, we will see that only one row of data is missing 'Bean Type'. Should we leave it as is, remove the entire row, or fill in the data with some value?
+		<br>Leaving undefined values lying around in our data can be problematic. Missing values are not counted and can be tricky to program around. Removing the entire row 
+	         actually isn't a bad option in this case. Since it is only one row out of over 1,700, it likely won't have too much effect on any analysis that we do. In this case, we will replace the missing value with 'Unknown'.
+		<br>Furthermore, there are non-breaking space characters, 0xa0 in the 'Bean Type' column. We will replace these values with the word 'Unknown'.</p>
+	  <p>After finding and repairing the bad data, visualize the dataset to see any patterns. For example, create a visualization that shows the number of reviews that were created each year.
+	<div class="col-md-4 col-sm-6">
+        <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+          <img src="images/about/c2.jpg" alt="">
+        </div>
+      </div>
+	Upon taking a look at the ratings, we will see that ratings are floating point values and that they range from 1.0 to 5.0. But are they really continuous?
+	Interestingly enough, the values don't seem to be continuous, but instead seem to be divided into quarters. Meaning, downstream we might be able to use a regression or categorical model in order to predict these values.</p>
+        <p>We've now explored every column in our dataset. We have filled in missing values and repaired obviously bad data. We will move forward to core EDA.</p>
+	  <h4>EDA</h4>
+
+          <p>Here are some graphs I derived from out dataset. Grade bar chart for ratings: a line chart of counts of each rating. To do that we can extract a 'Series' containing the ratings, group by that 'Series', and plot the counts.
+      <div class="col-md-4 col-sm-6">
+        <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+          <img src="images/about/c3.jpg" alt="">
+        </div>
+      </div>
+	Cocao percentage:
+      <div class="col-md-4 col-sm-6">
+        <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+          <img src="images/about/c4.jpg" alt="">
+        </div>
+      </div>
+	As we can tell from this chart, a very large proportion of chocolate bars rated have around 70% cocoa.
+		<br>Now, let's create a binned boxplot for ratings by cacao percentage.
+	<div class="col-md-4 col-sm-6">
+        <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+          <img src="images/about/c5.jpg" alt="">
+        </div>
+      </div>
+		Using this plot, we can answer some questions like: Which bin of cocoa percentages tends to be the lowest rated? or which bin (or bins) of cocoa percentages tend to get the most consistent ratings?</p>
+
+ 		<p> We can also create heatmap to find correlations amongst the columns. </p>
+
+	 <p>In conclusion, this exploratory data analysis and data preprocessing is a very significant step in data science and machine learning. Knowing how to use machine learning models is important, but if we want to model data properly, it is just as important that we understand our data well.</p>
+        
+
+
+
+<!--
+      <div class="col-lg-12">
+        <a class="btn btn-dafault btn-work hvr-bounce-to-right" href="#">get this work</a>
+      </div> 
+-->
+    </div>
+  </div>
+</section>
+<!-- work details part end -->
+
+
+            <!--
+            ==================================================
+            Call To Action Section Start
+            ================================================== -->
+            <section id="call-to-action">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="block">
+                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">SO WHAT YOU THINK ?</h1>
+                               
+                                <a href="mailto:maitripatel1299@gmail.com" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact With Me</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>;
+            <!--
+            ==================================================
+            Footer Section Start
+            ================================================== -->
+            <footer id="footer">
+                <div class="container">
+                    <div class="row content-justify-between">
+                        <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+                            <p class="copyright">Copyright: Design and Developed by Maitri Patel
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <!-- Social Media -->
+                            <ul class="social text-center text-md-right text-lg-right">
+                          
+                                <li>
+                                    <a href="https://github.com/maitri99" class="Github">
+                                        <i class="ion-social-github"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/maitri-patel-7269bb148" class="Linkedin">
+                                        <i class="ion-social-linkedin"></i>
+                                    </a>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer> <!-- /#footer -->
+	<!-- Template Javascript Files
+	================================================== -->
+	<!-- jquery -->
+	<script src="plugins/jQurey/jquery.min.js"></script>
+	<!-- Form Validation -->
+    <script src="plugins/form-validation/jquery.form.js"></script> 
+    <script src="plugins/form-validation/jquery.validate.min.js"></script>
+	<!-- slick slider -->
+	<script src="plugins/slick/slick.min.js"></script>
+	<!-- bootstrap js -->
+	<script src="plugins/bootstrap/bootstrap.min.js"></script>
+	<!-- wow js -->
+	<script src="plugins/wow-js/wow.min.js"></script>
+	<!-- slider js -->
+	<script src="plugins/slider/slider.js"></script>
+	<!-- Fancybox -->
+	<script src="plugins/facncybox/jquery.fancybox.js"></script>
+	<!-- template main js -->
+	<script src="js/main.js"></script>
+ 	</body>
+</html>
