@@ -51,6 +51,39 @@
         <link rel="stylesheet" href="plugins/hover/hover-min.css">
         <!-- template main css file -->
         <link rel="stylesheet" href="css/style.css">
+
+		<style>
+		    /* 1. Reduce space between About Me paragraphs */
+		    #about .block p {
+		        margin-bottom: 12px; /* Standard is usually 25-30px. Adjust this number to taste. */
+		    }
+		
+		    /* 2. Make Text and Image Equal Height (Desktop only) */
+		    @media (min-width: 992px) {
+		        /* Turn the row into a flex container so columns match height */
+		        #about .row {
+		            display: flex;
+		            flex-wrap: wrap; 
+		        }
+		        
+		        /* Ensure the image container fills the column */
+		        #about .col-md-4, 
+		        #about .col-md-4 .block {
+		            height: 100%;
+		            display: flex;
+		            flex-direction: column;
+		            justify-content: center; /* Centers image vertically if you prefer */
+		        }
+		
+		        /* Force image to fill the height and crop sides if needed so it doesn't squish */
+		        #about .col-md-4 img {
+		            height: 100%;
+		            width: 100%;
+		            object-fit: cover; /* CRITICAL: This ensures your photo isn't distorted */
+		            border-radius: 4px; /* Optional: adds a slight curve to corners */
+		        }
+		    }
+</style>
     </head>
     <body>
 
