@@ -1,52 +1,61 @@
 <!DOCTYPE html>
-
-
 <html class="no-js">
     <head>
-        <!-- Basic Page Needs
-        ================================================== -->
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="icon" href="favicon.ico">
-        <title>F1@Maitri</title>
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        <meta name="author" content="">
-        <!-- Mobile Specific Metas
-        ================================================== -->
+        <title>F1 Race Predictor | Maitri</title>
+        <meta name="description" content="Formula 1 Race Prediction using Machine Learning">
+        <meta name="keywords" content="Data Science, Machine Learning, F1, Python">
+        <meta name="author" content="Maitri Patel">
+        
         <meta name="format-detection" content="telephone=no">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        
-        <!-- Template CSS Files
-        ================================================== -->
-        <!-- Twitter Bootstrs CSS -->
         <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-        <!-- Ionicons Fonts Css -->
         <link rel="stylesheet" href="plugins/ionicons/ionicons.min.css">
-        <!-- animate css -->
         <link rel="stylesheet" href="plugins/animate-css/animate.css">
-        <!-- Hero area slider css-->
         <link rel="stylesheet" href="plugins/slider/slider.css">
-        <!-- slick slider -->
         <link rel="stylesheet" href="plugins/slick/slick.css">
-        <!-- Fancybox -->
         <link rel="stylesheet" href="plugins/facncybox/jquery.fancybox.css">
-        <!-- hover -->
         <link rel="stylesheet" href="plugins/hover/hover-min.css">
-        <!-- template main css file -->
         <link rel="stylesheet" href="css/style.css">
+
+        <style>
+            .tech-stack-badge {
+                display: inline-block;
+                background-color: rgba(255, 255, 255, 0.15);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 4px;
+                padding: 5px 10px;
+                margin: 5px 2px;
+                color: #fff;
+                font-size: 0.9rem;
+            }
+            .project-image-container {
+                margin: 30px 0;
+                text-align: center;
+            }
+            .project-image-container img {
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                border-radius: 5px;
+                max-width: 100%;
+            }
+            .project-image-caption {
+                margin-top: 10px;
+                font-style: italic;
+                color: #666;
+                font-size: 0.9rem;
+            }
+        </style>
     </head>
-    <body> <!--
-        ==================================================
-        Header Section Start
-        ================================================== -->
+    <body> 
+
 <section class="top-bar animated-header">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -59,34 +68,6 @@
                                     <span class="sr-only">(current)</span>
                                 </a>
                             </li>
- <!-- ==================================================
-       
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    Pages
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="404.html">404 Page</a>
-                                    <a class="dropdown-item" href="gallery.html">Gallery</a>
-                                    <a class="dropdown-item" href="single-post.html">Single Post</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    Blog
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="blog-fullwidth.html">Blog Full</a>
-                                    <a class="dropdown-item" href="blog-left-sidebar.html">Blog Left sidebar</a>
-                                    <a class="dropdown-item" href="blog-right-sidebar.html">Blog Right sidebar</a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
- ================================================== -->
                         </ul>
                     </div>
                 </nav>
@@ -94,177 +75,210 @@
         </div>
     </div>
 </section>
-<!--
-==================================================
-Global Page Section Start
-================================================== -->
+
 <section class="global-page-header">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="block">
           <h2>Formula 1 Race Predictor</h2>
+          
+          <h4 style="color: #ddd; margin-bottom: 15px; font-weight: 300;">Forecasting Top 3 Drivers using Classification Models</h4>
+          
+          <div class="tech-stack-container" style="margin-bottom: 20px;">
+              <span class="tech-stack-badge">Python</span>
+              <span class="tech-stack-badge">Pandas</span>
+              <span class="tech-stack-badge">Scikit-Learn</span>
+              <span class="tech-stack-badge">Keras/TensorFlow</span>
+              <span class="tech-stack-badge">Matplotlib</span>
+          </div>
+
           <div class="portfolio-meta">
             <span>May 12, 2021</span>|
-            <span> Category: Data modelling and prediction</span>
-    
+            <span> Category: Data Science & Sports Analytics</span>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!--/#Page header-->
 
-<!-- work details part start -->
 <section class="work-single">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
         
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-8">
-        <!-- work single Content -->
         <div class="work-single-content">
-          <h3>Machine Learning based approach to predict the winner</h3>
+          
+          <h3>From Novice to Superfan: The Motivation</h3>
+          <p>
+            Before this project, I knew absolutely nothing about Formula 1. My teammate, however, was a die-hard fan and a RedBull enthusiast. His passion was infectious, and we decided to tackle a project that combined data science with the high-stakes world of racing. 
+          </p>
+          <p>
+            The process turned me into a convert. As we dug into the data, I found myself curling up on the couch on race weekends, cheering and screaming at every Grand Prix until the checkered flag. 
+            Unlike other racing series, F1 cars are not equal; teams invest millions into engineering, creating significant performance disparities. Our goal was to cut through this noise and build a model for bettors that could predict the **Top 3 (Podium)** finishers more accurately than just looking at the qualifying grid.
+          </p>
 
-          <p>I knew nothing about Formula 1 before this project. My teammate however, was a huge fan of F1 and a RedBull enthusiast. After this project, I would find myself curled up on the couch and cheering and screaming at every GP until the very end of the race. This project was a real fun!
-	     As opposed to other forms of racing, the cars on the F1 grid are all different, leading to varying levels of performance. Each F1 team puts in millions of dollars into the development and creation of their car and its parts. As a result, the teams with more money often have more success. Additionally, its obvious to see that drivers also play an important role in being successful in the sport.
+          <h4>Exploratory Data Analysis (EDA)</h4>
+          <p>
+             We utilized a dataset covering 662 races from 1983 to 2020. Our first step was to understand what actually drives a win. We used correlation heatmaps to visualize relationships between features like grid position, constructor standings, and final race position.
+          </p>
 
-  	     The goal of this project is to predict the drivers who place in the top 3 each race. Because we are trying to predict whether or not a driver will be in the top 3 at the end of the race, we will be creating classification models.
+          <div class="project-image-container">
+              <img src="images/about/heatmap.jpg" class="img-fluid" alt="Correlation Heatmap of F1 Features">
+              <div class="project-image-caption">Figure 1: Heatmap showing correlation between Grid Position and Podium finishes.</div>
+          </div>
 
-             The target audience of this modeling project is the bettors who will be able to use it on a race weekend. Our hope is that instead of people betting random drivers or just the top 3 people from qualifiers, they will be able to use this model and have a better chance at betting on the right combination of drivers.</p>
-          <p>This project will be split into five parts: Data Import and EDA, Feature Selection, Modeling Approaches, Model Performance, and Analysis.</p>
+          <p>
+            We also investigated the "Home Field Advantage." For instance, Lewis Hamilton is British and races at his home track of Silverstone. By plotting his finish positions at Silverstone against his yearly average, we observed a clear trend: he consistently outperforms his average when racing on home soil.
+          </p>
 
-	  <h4>EDA</h4>
-	  <p> Our data contains race information from the 662 F1 races that took place between 1983 and 2020. This data was originally pulled from the Formula 1 website and ergast.com, an experimental Motor Racing Developer API. Once the data was imported, we created one big DataFrame, preprocessed the data, and started some feature selection. </p>
+           <div class="project-image-container">
+            <img src="images/about/lewis hamilton graph.png" class="img-fluid" alt="Lewis Hamilton Performance Analysis">
+            <div class="project-image-caption">Figure 2: Lewis Hamilton's performance at Silverstone vs. his yearly average.</div>
+        </div>
 
-	  <p> For EDA, we threw some correlation plots to show how does performing at your home country or your team's home country impact a driver's performance. We can take Lewis Hamilton for example. Hamilton is British and races at his home track of Silverstone. A line graph can show that Lewis Hamilton has generally performed really well at his home track, and has been pretty consistent over the past few years.</p>
-        
-	  <h4>Feature Selection</h4>
+          <h4>Modeling Methodology</h4>
+          <p>
+            This was framed as a classification problem: <strong>Class 1 (Podium Finish)</strong> vs. <strong>Class 0 (No Podium)</strong>.
+            To avoid "data leakage" (predicting the past using future data), we split our data chronologically:
+          </p>
+          <ul>
+              <li><strong>Training Set:</strong> 1983 - 2016</li>
+              <li><strong>Testing Set:</strong> 2017 - 2020</li>
+          </ul>
+          <p>
+            We developed and tuned four distinct models:
+            <strong>Logistic Regression</strong> (with sampling weights), 
+            <strong>Decision Tree Classifier</strong>, 
+            <strong>Random Forest Classifier</strong> (with hyperparameter optimization), and a 
+            <strong>Neural Network</strong> (using Keras with batch normalization and dropout).
+          </p>
 
-  <!-- Blockquote 
-          <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore
-            et
-            dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo.</blockquote> -->
+          <p>
+              Feature importance analysis confirmed that <strong>Qualifying (Grid) Position</strong> is the single most critical factor in predicting race outcomes, though team reliability also plays a massive role.
+          </p>
 
-          <p>Although our DataFrame has some features already created, we want to look at driver-level features that look at the driver's performance over the last few races in the season. We'll create one feature for qualifying performance and one feature for their performance in the actual race. </p>
-          <p> After we have all our features sorted, we will set up our data so we can use it for modeling. 
-	  For data splitting, since we are dealing with a forecasting problem, we need to ensure that we don't "look into the future" with our training sets. 
-	  To avoid this, we will split the data based on years. Our training data will be from 1983-2016 and the test set will include races from 2017-2020. </p>
+           <div class="project-image-container">
+            <img src="images/about/feature.jpg" class="img-fluid" alt="Feature Importance and Grid Analysis">
+            <div class="project-image-caption">Figure 3: Analysis showing the impact of starting Grid Position on Final Position.</div>
+        </div>
 
-	  <h4>Model Creation</h4>
+          <h4>Performance Evaluation</h4>
+          <p>
+            Since our goal was to help bettors identify winners, we prioritized <strong>Precision</strong> over raw accuracy. A high precision score means that when our model predicts a driver will be in the Top 3, they are highly likely to actually be there.
+          </p>
 
-	 <p>The models that will be looked at are Baseline Random Predictor, logistic regression, decision tree classification, random forest classification, and a Neural Network.
-	    Baseline Random Predictor chooses three random drivers from each race and predicts them as the winner. For Logistic regression, we fine tuned our hyperparameters using GridSearchCV which helped us create a better performing model.
-	    In addition to our best estimators, we added a sampling weight to the regression to help balance the predictions. Then we fit the model and start making predictions. Predictions are stored in a nested array. Each prediction has a prediction probability of being 0 and being 1. 
-	    Probability of being a 1 will be used in our models. For Random Forest, we added hyperparameter optimization to this model. Finally we created a Neural Network, a sequential model, and added in batch normalization and some dropout to avoid overfitting. This helps because our data set is relatively small.</p>
-        
-	  <h4>Model Performance</h4>
-	 
-	<p> We would look at the accuracy and loss from the training and test sets. We want to ensure that our accuracy increased and our loss decreased as our model was being trained.
-	    We would also look at the feature importance of this model which tells how important starting grid position is. </p>
-  
-	  <h4>Model Analysis</h4>
-	  <p> We compared the models to each other using a bar graph with the bars sorted from lowest to highest precision. We sorted the values because all of our models have a very similar precision score. The plot below depicts logistic regression to be the best performing model, narrowly beating out the rest of the classification models.</p>
-	<p>Through our models, we determined that the logistic regression yielded the most precise predictions.
-	Given that we used a relatively small dataset, we had to limit the training and testing of each model.
-	As a result, it is hard to gauge how this model can be deployed outside of a casual setting. 
-	Additionally, F1 consistently has changes to their regulations so different teams or drivers can quickly improve or decline and cause a large shift in our data. </p>
+          <div class="table-responsive" style="margin: 30px 0;">
+              <table class="table table-striped table-bordered">
+                  <thead class="thead-dark">
+                      <tr>
+                          <th scope="col">Model</th>
+                          <th scope="col">Precision</th>
+                          <th scope="col">Accuracy</th>
+                          <th scope="col">Recall</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr style="font-weight: bold; background-color: #e8f5e9;">
+                          <td>Logistic Regression (Best)</td>
+                          <td>0.709</td>
+                          <td>0.911</td>
+                          <td>0.709</td>
+                      </tr>
+                      <tr>
+                          <td>Neural Network</td>
+                          <td>0.700</td>
+                          <td>0.909</td>
+                          <td>0.700</td>
+                      </tr>
+                      <tr>
+                          <td>Decision Tree</td>
+                          <td>0.696</td>
+                          <td>0.903</td>
+                          <td>0.679</td>
+                      </tr>
+                      <tr>
+                          <td>Random Forest</td>
+                          <td>0.662</td>
+                          <td>0.897</td>
+                          <td>0.662</td>
+                      </tr>
+                      <tr>
+                        <td>Baseline (Random)</td>
+                        <td>0.160</td>
+                        <td>0.744</td>
+                        <td>0.160</td>
+                    </tr>
+                  </tbody>
+              </table>
+          </div>
 
-	</div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-          <img src="images/about/f1grid.JPG" alt="">
+          <div class="project-image-container">
+            <img src="images/about/model performance.jpg" class="img-fluid" alt="Model Precision Comparison Chart">
+            <div class="project-image-caption">Figure 4: Comparison of Precision Scores across all trained models.</div>
+        </div>
+
+          <h4>Conclusion</h4>
+          <p>
+            Surprisingly, the simpler <strong>Logistic Regression</strong> model outperformed the more complex Random Forest and Neural Network models, achieving a precision of nearly 71%. 
+          </p>
+          <p>
+            However, predicting F1 is notoriously difficult due to frequent regulation changes and the "noise" of mechanical failures or crashes. While our model performs significantly better than random guessing, future improvements would focus on engineered features that separate driver skill from car performance more distinctly.
+          </p>
+
         </div>
       </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-          <img src="images/about/f1.JPG" alt="">
-        </div>
-      </div>
-<!--
-      <div class="col-lg-12">
-        <a class="btn btn-dafault btn-work hvr-bounce-to-right" href="#">get this work</a>
-      </div> 
--->
     </div>
   </div>
 </section>
-<!-- work details part end -->
 
+<section id="call-to-action">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">INTERESTED IN MY WORK?</h2>
 
-            <!--
-            ==================================================
-            Call To Action Section Start
-            ================================================== -->
-            <section id="call-to-action">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="block">
-                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">SO WHAT YOU THINK ?</h1>
-                               
-                                <a href="mailto:maitripatel1299@gmail.com" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact With Me</a>
-                            </div>
-                        </div>
-                        
-                    </div>
+                    <a href="mailto:maitripatel1299@gmail.com" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Let's chat!</a>
                 </div>
-            </section>;
-            <!--
-            ==================================================
-            Footer Section Start
-            ================================================== -->
-            <footer id="footer">
-                <div class="container">
-                    <div class="row content-justify-between">
-                        <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
-                            <p class="copyright">Copyright: Design and Developed by Maitri Patel
-                            </p>
-                        </div>
-                        <div class="col-md-4 col-12">
-                            <!-- Social Media -->
-                            <ul class="social text-center text-md-right text-lg-right">
-                          
-                                <li>
-                                    <a href="https://github.com/maitri99" class="Github">
-                                        <i class="ion-social-github"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/maitri-patel-7269bb148" class="Linkedin">
-                                        <i class="ion-social-linkedin"></i>
-                                    </a>
-                                </li>
-                               
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer> <!-- /#footer -->
-	<!-- Template Javascript Files
-	================================================== -->
-	<!-- jquery -->
-	<script src="plugins/jQurey/jquery.min.js"></script>
-	<!-- Form Validation -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="container">
+        <div class="row content-justify-between">
+            <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+                <p class="copyright">Copyright: Design and Developed by Maitri Patel</p>
+            </div>
+            <div class="col-md-4 col-12">
+                <ul class="social text-center text-md-right text-lg-right">
+                    <li>
+                        <a href="https://github.com/maitri99" class="Github">
+                            <i class="ion-social-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/maitri-patel-7269bb148" class="Linkedin">
+                            <i class="ion-social-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="plugins/jQurey/jquery.min.js"></script>
     <script src="plugins/form-validation/jquery.form.js"></script> 
     <script src="plugins/form-validation/jquery.validate.min.js"></script>
-	<!-- slick slider -->
-	<script src="plugins/slick/slick.min.js"></script>
-	<!-- bootstrap js -->
-	<script src="plugins/bootstrap/bootstrap.min.js"></script>
-	<!-- wow js -->
-	<script src="plugins/wow-js/wow.min.js"></script>
-	<!-- slider js -->
-	<script src="plugins/slider/slider.js"></script>
-	<!-- Fancybox -->
-	<script src="plugins/facncybox/jquery.fancybox.js"></script>
-	<!-- template main js -->
-	<script src="js/main.js"></script>
- 	</body>
+    <script src="plugins/slick/slick.min.js"></script>
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="plugins/wow-js/wow.min.js"></script>
+    <script src="plugins/slider/slider.js"></script>
+    <script src="plugins/facncybox/jquery.fancybox.js"></script>
+    <script src="js/main.js"></script>
+    </body>
 </html>
