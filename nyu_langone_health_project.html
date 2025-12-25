@@ -1,52 +1,67 @@
 <!DOCTYPE html>
-
-
 <html class="no-js">
     <head>
-        <!-- Basic Page Needs
-        ================================================== -->
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="icon" href="favicon.ico">
-        <title>fairness-and-interpretation@Maitri</title>
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        <meta name="author" content="">
-        <!-- Mobile Specific Metas
-        ================================================== -->
+        <title>Transplant-RAG | Maitri Portfolio</title>
+        <meta name="description" content="Clinical Knowledge Distillation using Local LLMs and Bibliometrics">
+        <meta name="keywords" content="NLP, RAG, Healthcare AI, LLMs, Python">
+        <meta name="author" content="Maitri Patel">
         <meta name="format-detection" content="telephone=no">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         
-        <!-- Template CSS Files
-        ================================================== -->
-        <!-- Twitter Bootstrs CSS -->
         <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-        <!-- Ionicons Fonts Css -->
         <link rel="stylesheet" href="plugins/ionicons/ionicons.min.css">
-        <!-- animate css -->
         <link rel="stylesheet" href="plugins/animate-css/animate.css">
-        <!-- Hero area slider css-->
         <link rel="stylesheet" href="plugins/slider/slider.css">
-        <!-- slick slider -->
         <link rel="stylesheet" href="plugins/slick/slick.css">
-        <!-- Fancybox -->
         <link rel="stylesheet" href="plugins/facncybox/jquery.fancybox.css">
-        <!-- hover -->
         <link rel="stylesheet" href="plugins/hover/hover-min.css">
-        <!-- template main css file -->
         <link rel="stylesheet" href="css/style.css">
+        
+        <style>
+            /* Custom table styling for this page */
+            .table-custom {
+                width: 100%;
+                margin-bottom: 1rem;
+                color: #212529;
+                border: 1px solid #dee2e6;
+            }
+            .table-custom th, .table-custom td {
+                padding: 0.75rem;
+                vertical-align: top;
+                border-top: 1px solid #dee2e6;
+            }
+            .table-custom thead th {
+                vertical-align: bottom;
+                border-bottom: 2px solid #dee2e6;
+                background-color: #f8f9fa;
+            }
+            .tech-badge {
+                display: inline-block;
+                padding: 5px 10px;
+                margin: 2px;
+                background-color: #e9ecef;
+                border-radius: 4px;
+                font-size: 0.85em;
+                font-weight: 600;
+                color: #495057;
+            }
+            /* Ensure images fit container */
+            .img-fluid {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
     </head>
-    <body> <!--
-        ==================================================
-        Header Section Start
-        ================================================== -->
+    <body>
+
 <section class="top-bar animated-header">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -59,34 +74,6 @@
                                     <span class="sr-only">(current)</span>
                                 </a>
                             </li>
- <!-- ==================================================
-       
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    Pages
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="404.html">404 Page</a>
-                                    <a class="dropdown-item" href="gallery.html">Gallery</a>
-                                    <a class="dropdown-item" href="single-post.html">Single Post</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    Blog
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="blog-fullwidth.html">Blog Full</a>
-                                    <a class="dropdown-item" href="blog-left-sidebar.html">Blog Left sidebar</a>
-                                    <a class="dropdown-item" href="blog-right-sidebar.html">Blog Right sidebar</a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
- ================================================== -->
                         </ul>
                     </div>
                 </nav>
@@ -94,217 +81,173 @@
         </div>
     </div>
 </section>
-<!--
-==================================================
-Global Page Section Start
-================================================== -->
+
 <section class="global-page-header">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h2>Fairness and Interpretability</h2>
+          <h2>Transplant-RAG for NYU Langone Health</h2>
           <div class="portfolio-meta">
-            <span>March 9, 2021</span>|
-            <span> Case Study: Northpointe vs ProPublica</span>
-    
+            <span>Dec 2025</span>|
+            <span> Bibliometrics and LLMs for Transplant Knowledge Distillation</span>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!--/#Page header-->
 
-<!-- work details part start -->
 <section class="work-single">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12">
-        
-      </div>
-    </div>
-    <div class="row">
+      
       <div class="col-lg-8">
-        <!-- work single Content -->
         <div class="work-single-content">
-          <h3>Analysis of ProPublica Critique on COMPAS Risk Scales</h3>
+          
+          <h3>Privacy-First RAG via Bibliometrics & Local LLMs</h3>
+          <p>
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Qwen2.5-32B</span>
+              <span class="tech-badge">FAISS</span>
+              <span class="tech-badge">LangChain</span>
+              <span class="tech-badge">OpenAlex API</span>
+              <span class="tech-badge">RAGAS</span>
+          </p>
+          <hr>
 
-          <p>This research team project presents Northpointe’s technical analysis and ProPublica’s critique article on the COMPAS Risk Scales that are designed by Northpointe.
-	     We thoroughly examined the statistical methods in the article and conducted our own analysis of the data and findings that the ProPublica authors used for their study. 
-	     Based on our review, this project presents evidence in terms of how fair the Risk Scales are.</p>
-          <p>ProPublica is a nonprofit newsroom that produces investigative journalism. COMPAS Risk Scale is a case management and decision support tool developed and owned by Northpointe, 
-	     a consulting and research firm, and used by U.S. courts to assess the likelihood of a defendant 
-	     becoming a recidivist. Northpointe created risk scales for general and violent recidivism, and for pretrial misconduct. The scales were designed using behavioral and 
-	     psychological constructs "of very high relevance to recidivism and criminal careers.</p>
+          <h4>Motivation: The "Hallucination" Problem</h4>
+          <p>
+            Transplantation medicine relies on decades of fragmented clinical trials and evolving guidelines. 
+            Clinicians face two major challenges when using modern AI tools to synthesize this data:
+            <br>1. <b>Hallucination:</b> Generic LLMs (like ChatGPT) frequently invent citations, which is dangerous in high-stakes clinical settings.
+            <br>2. <b>Recency Bias:</b> Standard search algorithms prioritize new papers, ignoring foundational historical studies.
+            <br>3. <b>Privacy:</b> Uploading patient context to cloud-based models violates privacy standards (HIPAA).
+          </p>
 
-	  <h4>Northpointe Findings and Conclusion</h4>
-	  <p> Northpointe rejected the conclusions of ProPublica that the COMPAS Risk Scales are racially biased towards black. 
-	      It claims to have used incorrect classification statistics and the risk scales exhibiting accuracy equity. According to Northpointe, ProPublica’s conclusion based on 
-	      false models fall short when compared with their own cox survival model which predicts against their hypothesis. Northpointe also concluded the recidivism rate of the Black and White defendants.</p>
-	  
-	  <h4>Recidivism Risk Assessments</h4>
-	  <p>GRRS (General Recidivism Risk Scale) and VRRS (Violent Recidivism Risk Scale) are the risk assessments.
-	     The purpose of the GRRS and the VRRS is to predict future reoffending given information about an individual at the time of assessment.
-		ProPublica presents results from analyses conducted in three different samples: 
-		<br>1. pretrial defendants with complete case records; at least two years of follow-up time
-		<br>2. pretrial defendants with at least two years of follow-up; incomplete case records
-		<br>3. pretrial defendants with varying follow-up times (1 to 1,186 days); incomplete case records
-		<br>ProPublica did not provide descriptive statistics for blacks and whites for any of the samples that they used.
-		The inputs for the GRRS and VRRS were not included in the study data sets that PP made available on their website.
-		ProPublica did include age and number of prior arrests in the data they posted.</p>
-		<p> Let's look at the percentage of defendants in the Decile Score Levels of Each Risk Scale by Race.</p>
-		<p>The mean number of prior arrests is lower for whites(M =2.6, SD=3.8) compared with blacks(M =4.4, SD=5.6)
-		<br>The mean age at assessment is higher for whites(M =37.7, SD=12.8) compared with blacks(M =32.7, SD=10.9)
-		<br>Decile scores 1-4: Low Risk
- 		<br>Decile scores 5-7: Medium Risk
-		<br>Decile scores 8 and above: High Risk 
-                <br> Refer to the image for decile scores</p>
+          <h4>The Solution</h4>
+          <p>
+            We built a local, privacy-preserving <b>Retrieval-Augmented Generation (RAG)</b> pipeline. 
+            Unlike standard systems that ingest everything, we utilized <b>Bibliometrics</b> (Reference Publication Year Spectroscopy - RPYS) 
+            to curate the corpus, ensuring the model only retrieves from historically significant and scientifically validated papers.
+          </p>
+
+          <h4>System Architecture</h4>
+          <p>The pipeline consists of three distinct engineering stages:</p>
+          <ul>
+              <li><b>A. Bibliometric Data Curation:</b> Ingested 15,000+ records via PubMed/OpenAlex APIs. Used RPYS to identify "citation peaks" and filter down to 3,500+ seminal PDFs.</li>
+              <li><b>B. Advanced Extraction:</b> Implemented a "Fusion Extraction" strategy using <code>pypdfium2</code> for digital PDFs and <b>DeepSeek OCR</b> for scanned historical documents.</li>
+              <li><b>C. Two-Stage Retrieval:</b> 
+                  <br>- <i>Recall:</i> Indexed 20,000+ chunks using <b>FAISS</b> (Bi-Encoder).
+                  <br>- <i>Precision:</i> Re-scored candidates using a <b>Cross-Encoder</b> (ms-marco-MiniLM) to filter out distractors. Only the Top 10 clinically relevant chunks were sent to the LLM.
+              </li>
+          </ul>
+
+          <h4>Results: Local vs. Cloud</h4>
+          <p>We benchmarked our local Qwen2.5 model against GPT-4o on 32 complex clinical queries. Our specialized pipeline achieved higher citation accuracy.</p>
+          
+          <table class="table-custom">
+              <thead>
+                  <tr>
+                      <th>Metric</th>
+                      <th>Generic Cloud LLM (GPT-4o)</th>
+                      <th>Our Local Pipeline (Qwen2.5)</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td><b>Citation Accuracy</b></td>
+                      <td>61.9%</td>
+                      <td><b>67.7%</b></td>
+                  </tr>
+                  <tr>
+                      <td><b>Faithfulness (RAGAS)</b></td>
+                      <td>86.1%</td>
+                      <td><b>89.4%</b></td>
+                  </tr>
+                  <tr>
+                      <td><b>Privacy</b></td>
+                      <td>Data Leaves Premise</td>
+                      <td><b>100% Offline / Local</b></td>
+                  </tr>
+                  <tr>
+                      <td><b>Cost</b></td>
+                      <td>$$$ (Per Token)</td>
+                      <td><b>Free (Open Weights)</b></td>
+                  </tr>
+              </tbody>
+          </table>
+
+          <p>
+            The system performed best on <b>"Complex/Guideline"</b> questions (e.g., immunosuppression protocols), achieving 
+            <b>97.7% Answer Relevancy</b>. We validated these results using Natural Language Inference (NLI), finding a 54% positive correlation between our citation metrics and logical entailment.
+          </p>
+
+          <div style="margin-top: 30px;">
+              <a href="https://docs.google.com/viewer?url=YOUR_DRIVE_LINK_HERE" class="btn btn-default btn-contact" target="_blank">
+                  <i class="ion-ios-cloud-download-outline"></i> Read Full Research Paper
+              </a>
+          </div>
+
+        </div>
+      </div>
+      
+      <div class="col-md-4 col-sm-6">
         
-	  <h4>Classification Statistics</h4>
-
-          <p>We will use two types of stats in this research:
-		<br>Model errors : Sensitivity and Specificity quantify Model Accuracy. The false positive rate and false negative rate quantify Model Error.
-		<br>Target Population errors: useful classification statistic for this purpose is the predictive value. The complement of the PV-(1 - PV-) is the probability of recidivating given a negative test result (“Low”risk score).</p>
-         
-	  <h4>Accuracy Equity and Predictive Parity</h4>
-
- 		<p>A risk scale exhibits <i>accuracy</i> equity if it can discriminate recidivists and non-recidivists equally well for two different groups such as blacks and whites.
-		The risk scale exhibits <i>predictive</i> parity if the classifier obtains similar predictive values for two different groups such as blacks and whites.
-		ProPublica authors’ incorrect classification of classification errors for GRRS:
-      <div class="col-md-4 col-sm-6">
         <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-          <img src="images/about/fi2.JPG" alt="">
+            <h5 class="text-center" style="margin-top:20px;">Pipeline Architecture</h5>
+            <img src="images/transplant_rag_architecture.png" alt="RAG Architecture Diagram" class="img-fluid" style="border: 1px solid #eee; margin-bottom: 20px;">
+            <p class="text-center text-muted small">Fig 1. End-to-End Retrieval Pipeline</p>
         </div>
-      </div>
-	These rates are the Model Errors that ignore the base rate of recidivism in the Broward County population
-	<br>Corrected errors:
-      <div class="col-md-4 col-sm-6">
-        <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-          <img src="images/about/fi3.JPG" alt="">
+
+        <div class="block wow fadeInRight" data-wow-delay=".5s" data-wow-duration="500ms">
+            <h5 class="text-center">Benchmarking Results</h5>
+            <img src="images/transplant_rag_results.png" alt="Qwen vs GPT4o Results" class="img-fluid" style="border: 1px solid #eee; margin-bottom: 20px;">
+            <p class="text-center text-muted small">Fig 2. Local Qwen2.5 outperforms GPT-4o in Citation Accuracy.</p>
         </div>
+
       </div>
-	They compared the complements of Sensitivity and Specificity for blacks and whites. The proper interpretation of the results should demonstrate that the GRRS and the VRRS are equally accurate for blacks and whites.
-	ProPublica  authors misrepresented the percentage of non-recidivists with a positive test result (“Not Low” risk level) as the percentage of persons with a positive test result that did not recidivate (“Labeled Higher Risk, But Didn’t Re-Offend”). 
-	ProPublica focused on classification statistics that did not take into account the different base rates of recidivism for blacks and whites.
-	<br><b>ProPublica’s conclusion: </b> “The analysis also showed that even when controlling for prior crimes, future recidivism, age, and gender, black defendants were 45 percent more likely to be assigned higher risk scores than white defendants”
- 	<br> Northpointe thinks that PP’s reverse logistic regression is misspacified in this case as it uses the future recidivism as the predictor and measured with error instead of following the standard predictive practice to include future recidivism as outcome and risk scale as predictor. 
-	PP is predicting in terms of error rates of fp and fn while Northpointe focuses on tp and tn.
-	When doing the cox survival analysis Northpointe finds that the predicted hazard ratios for white groups were 1.00, 2.32, 3.609 for the low, medium and high and 1.32, 2.58, 3.95 respectively for blacks.
-	In all levels blacks are predicted to have higher risk of recidivism.
-	<br>Based on survival analysis, a black defendant rated high will have a slightly higher probability of recidivism than a white defendant with the same high score. So it actually slightly underpredicts for blacks.
-	<br> The conclusion for predictive parity will be drawn likewise.
- </p>
-
-	  <h4>Critique (Error rate balance/equalized odds)</h4>
-
-	 <p>ProPublica alleged that COMPAS was guilty of failure of error rate balance or failure of equalized odds.
-	<br>In PP’s eyes of fairness equalized odds must be satisfied and to do so:
-	<br>1. Misclassification of High risk must be same for both blacks and whites.
-	<br>2. Misclassification of low risk must be same for both blacks and whites
-	<br>Essentially to satisfy equalized error false positives and false negatives have to be equal for both blacks and whites.
-</p>
-        
-	  <h4>Critique (Accuracy equity and Predictive parity)</h4>
-	 
-	<p>When refuting NorthPointe does not directly argue against the claims of failure of equalized error.They instead saw fairness in a different way which was in terms of how it was able to predict recidivism and non-recidivism equally for both blacks and whites. 
-	To satisfy the definitions of “accuracy equity and predictive parity” an algorithm has to base its concept of fairness on the fact that it predicts recidivism equally with the same level of accuracy without race being a factor.
-</p>
-  
-	  <h4>Critique (base rate fallacy)</h4>
-	 
-	<p>One of the things NorthPointe scrutinizes PP for is ignoring the base rate of crime for the races which explains the increase in misclassification for blacks.
-	<br>No algorithm in our opinion and as mentioned by many studies can satisfy the fairness criteria of both PP and NP.
-	<br>If the recidivism rate for white and black defendants is the same within each risk category, and if black defendants have a higher overall recidivism rate, then a greater share of black defendants will be classified as high risk.
-	<br>And if a greater share of black defendants are classified as high risk, then . . . a greater share of black defendants who do not reoffend will also be classified as high risk
- </p>
-
-	</div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-          <img src="images/about/fi1.JPG" alt="">
-        </div>
-      </div>
-
-<!--
-      <div class="col-lg-12">
-        <a class="btn btn-dafault btn-work hvr-bounce-to-right" href="#">get this work</a>
-      </div> 
--->
     </div>
   </div>
 </section>
-<!-- work details part end -->
 
+<section id="call-to-action">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">INTERESTED IN MY WORK?</h2>
+                    <a href="mailto:maitripatel1299@gmail.com" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Let's chat!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-            <!--
-            ==================================================
-            Call To Action Section Start
-            ================================================== -->
-            <section id="call-to-action">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="block">
-                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">SO WHAT YOU THINK ?</h1>
-                               
-                                <a href="mailto:maitripatel1299@gmail.com" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact With Me</a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </section>;
-            <!--
-            ==================================================
-            Footer Section Start
-            ================================================== -->
-            <footer id="footer">
-                <div class="container">
-                    <div class="row content-justify-between">
-                        <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
-                            <p class="copyright">Copyright: Design and Developed by Maitri Patel
-                            </p>
-                        </div>
-                        <div class="col-md-4 col-12">
-                            <!-- Social Media -->
-                            <ul class="social text-center text-md-right text-lg-right">
-                          
-                                <li>
-                                    <a href="https://github.com/maitri99" class="Github">
-                                        <i class="ion-social-github"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/maitri-patel-7269bb148" class="Linkedin">
-                                        <i class="ion-social-linkedin"></i>
-                                    </a>
-                                </li>
-                               
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer> <!-- /#footer -->
-	<!-- Template Javascript Files
-	================================================== -->
-	<!-- jquery -->
-	<script src="plugins/jQurey/jquery.min.js"></script>
-	<!-- Form Validation -->
-    <script src="plugins/form-validation/jquery.form.js"></script> 
-    <script src="plugins/form-validation/jquery.validate.min.js"></script>
-	<!-- slick slider -->
-	<script src="plugins/slick/slick.min.js"></script>
-	<!-- bootstrap js -->
-	<script src="plugins/bootstrap/bootstrap.min.js"></script>
-	<!-- wow js -->
-	<script src="plugins/wow-js/wow.min.js"></script>
-	<!-- slider js -->
-	<script src="plugins/slider/slider.js"></script>
-	<!-- Fancybox -->
-	<script src="plugins/facncybox/jquery.fancybox.js"></script>
-	<!-- template main js -->
-	<script src="js/main.js"></script>
- 	</body>
+<footer id="footer">
+    <div class="container">
+        <div class="row content-justify-between">
+            <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+                <p class="copyright">Copyright: Design and Developed by Maitri Patel</p>
+            </div>
+            <div class="col-md-4 col-12">
+                <ul class="social text-center text-md-right text-lg-right">
+                    <li><a href="https://github.com/maitri99" class="Github"><i class="ion-social-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/maitri-patel-7269bb148" class="Linkedin"><i class="ion-social-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="plugins/jQurey/jquery.min.js"></script>
+<script src="plugins/form-validation/jquery.form.js"></script> 
+<script src="plugins/form-validation/jquery.validate.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/wow-js/wow.min.js"></script>
+<script src="plugins/slider/slider.js"></script>
+<script src="plugins/facncybox/jquery.fancybox.js"></script>
+<script src="js/main.js"></script>
+</body>
 </html>
