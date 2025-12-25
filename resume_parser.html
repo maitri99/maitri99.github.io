@@ -76,8 +76,8 @@
                 <div class="block">
                   <h2>Deep Learning Resume Parser</h2>
                   <div class="portfolio-meta">
-                    <span>Oct 2025</span>|
-                    <span> Computer Vision & NLP Pipeline</span>
+                    <span>December 2021</span>|
+                    <span>converting unstructured PDF resumes into structured datasets using Computer Vision (Detectron2) and OCR.</span>
                   </div>
                 </div>
               </div>
@@ -92,9 +92,8 @@
                 <div class="work-single-content">
                   
                   <h3>The Challenge</h3>
-                  <p>In the recruitment industry, filtering thousands of resumes is a massive bottleneck. Traditional parsers often fail when resumes have creative layouts, double columns, or graphics because they rely on simple text extraction (Regex).</p>
-                  <p>This project solves that problem by treating the resume as an <strong>image first</strong>. By using Object Detection to visually segment the document into distinct regions (Education, Skills, Work Experience), we can extract text with context, resulting in highly structured data ready for downstream analytics.</p>
-
+                  <p>I led a team of 4 engineers to develop an automated resume parsing solution for <strong>Keystone</strong>. In the recruitment industry, filtering thousands of resumes is a massive bottleneck. Traditional parsers often fail when resumes have creative layouts, double columns, or graphics because they rely on simple text extraction (Regex).</p>
+                  <p>Our project solved this problem by treating the resume as an <strong>image first</strong>. By using Object Detection to visually segment the document into distinct regions (Education, Skills, Work Experience), we extracted text with context, resulting in highly structured data ready for downstream analytics.</p>
                   <div style="margin: 20px 0;">
                       <span class="tech-tag">Python</span>
                       <span class="tech-tag">Detectron2</span>
@@ -108,14 +107,27 @@
                   <p>The solution is an end-to-end pipeline that transforms raw PDFs into a structured CSV database.</p>
                   
                   <p><strong>1. Preprocessing & Annotation:</strong><br> 
-                  The resume books were converted from PDF to high-resolution images. To train the custom model, I manually annotated a dataset of resumes, drawing bounding boxes around key regions (Work Experience, Education, Skills, etc.).</p>
+                  The resume books were converted from PDF to high-resolution images. To train the custom model, dataset of resumes were manually annotated, drawing bounding boxes around key regions (Work Experience, Education, Skills, etc.).</p>
                   
                   <p><strong>2. Object Detection (The Core):</strong><br>
-                  I utilized <strong>Detectron2</strong> (Meta's state-of-the-art library) to train a Faster R-CNN model. This model learns the visual structure of a document, allowing it to distinguish between a "Skills" section and a "Work History" section purely based on layout.</p>
+                  Utilized <strong>Detectron2</strong> (a PyTorch-based library by Meta Research) to train a Faster R-CNN model. This model learns the visual structure of a document, allowing it to distinguish between a "Skills" section and a "Work History" section purely based on layout.</p>
                   
                   <p><strong>3. Content Extraction:</strong><br>
                   Once the bounding boxes are predicted, the pipeline crops these specific regions and passes them through an OCR engine (EasyOCR/Tesseract). This ensures that text is extracted <em>within context</em>, avoiding the common issue of mixing up text from two different columns.</p>
 
+                  <p><strong>4. Structured Output:</strong><br>
+                    The extracted text is mapped to its category and saved as a CSV/JSON file, creating a searchable database of candidates.</p>    
+
+                    <h4>Key Features & Challenges Solved</h4>
+                    <p><strong>1. Layout Invariance: </strong>
+                    Unlike regex-based parsers, this model handles two-column layouts and non-standard formatting effectively.</p>
+
+                    <p><strong>2. Custom Named Entity Recognition (NER): </strong>
+                    instead of generic NER, this treats whole sections as objects, preserving the relationship between a job title and its description.</p>
+
+                    <p><strong>3. Automated Structuring: </strong>
+                    capable of processing a batch of PDFs and outputting a clean CSV for HR analytics.</p>
+                    
                   <h4>Model Configuration</h4>
                   <p>Below is a snippet of the Detectron2 configuration used to define the custom ROI heads for the resume sections.</p>
                   <div class="code-snippet">
