@@ -52,20 +52,21 @@
         <div class="row">
           <div class="col-md-12">
             <div class="block">
-              <h2>Robust Representation Learning on Low-Resolution Images via Self-Distillation</h2>
+              <h2>Robust Representation Learning</h2>
               <div class="portfolio-meta">
                 <span>December 2025</span>|
-                <span> Category: Deep Learning & Computer Vision</span>
+                <span>On Low-Resolution Images via Self-Distillation</span>
               </div>
 
-                            <div class="mt-4 text-center">
-                                <span class="tech-badge">Python</span>
-                                <span class="tech-badge">PyTorch</span>
-                                <span class="tech-badge">Hugging Face Transformers</span>
-                                <span class="tech-badge">OpenAI API</span>
-                                <span class="tech-badge">LoRA (PEFT)</span>
-                                <span class="tech-badge">Scikit-learn</span>
-                            </div>
+                <div style="margin: 20px 0;">
+                      <span class="tech-tag">Python</span>
+                      <span class="tech-tag">PyTorch</span>
+                      <span class="tech-tag">Vision Transformers (ViT-Small)</span>
+                      <span class="tech-tag">DINO (Self-Distillation)</span>
+                      <span class="tech-tag">NYU Greene HPC (A100 GPUs)</span>
+                      <span class="tech-tag">Pandas</span>
+                      <span class="tech-tag">NumPy</span>
+                  </div>
                 
             </div>
           </div>
@@ -80,7 +81,7 @@
                 <div class="work-single-content">
                     <h3>Project Overview</h3>
                     <p>
-                        In this project, I tackled a constrained <strong>Self-Supervised Learning (SSL)</strong> challenge: training a visual encoder from scratch on 500,000 unlabeled images without using any external pre-trained weights. The core constraint was extreme data limitation—images were resized to a low resolution of <strong>96×96 pixels</strong>, and the model parameter budget was capped at <strong>100M</strong>.
+                        In this project, I tackled a constrained <strong>Self-Supervised Learning (SSL)</strong> challenge: training a visual encoder from scratch on 500,000 unlabeled images without using any external pre-trained weights. The core constraint was extreme data limitation - images were resized to a low resolution of <strong>96×96 pixels</strong>, and the model parameter budget was capped at <strong>100M</strong>.
                     </p>
                     <p>
                         While standard industry approaches often rely on massive compute and high-resolution data (224px+), I engineered a pipeline that learns semantic features from low-information inputs. I successfully demonstrated that <strong>Vision Transformers (ViT)</strong> significantly outperform traditional CNNs in this regime by preserving spatial fidelity, achieving <strong>66.5% accuracy</strong> on Mini-ImageNet evaluation using only frozen features.
