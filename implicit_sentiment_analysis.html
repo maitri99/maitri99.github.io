@@ -19,6 +19,19 @@
         <link rel="stylesheet" href="plugins/facncybox/jquery.fancybox.css">
         <link rel="stylesheet" href="plugins/hover/hover-min.css">
         <link rel="stylesheet" href="css/style.css">
+        
+        <style>
+            .tech-badge {
+                background-color: #f0f0f0;
+                color: #333;
+                padding: 5px 12px;
+                border-radius: 20px;
+                font-size: 0.9em;
+                margin: 0 5px;
+                display: inline-block;
+                border: 1px solid #ddd;
+            }
+        </style>
     </head>
     <body> 
         <section class="top-bar animated-header">
@@ -56,11 +69,21 @@
                                 <span>May 2025</span>|
                                 <span>Hybrid Prompting & Multi-Agent Debate in LLMs</span>
                             </div>
-                        </div>
+                            
+                            <div class="mt-4 text-center">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">PyTorch</span>
+                                <span class="tech-badge">Hugging Face Transformers</span>
+                                <span class="tech-badge">OpenAI API</span>
+                                <span class="tech-badge">LoRA (PEFT)</span>
+                                <span class="tech-badge">Scikit-learn</span>
+                            </div>
+                            </div>
                     </div>
                 </div>
             </div>
         </section>
+        
         <section class="work-single">
             <div class="container">
                 
@@ -69,7 +92,7 @@
                         <div class="work-single-content">
                             <h3>The Challenge: Hidden Emotions</h3>
                             <p>
-                                Traditional sentiment analysis struggles with "implicit sentiment"—emotional tones that are subtle, sarcastic, or indirectly expressed. 
+                                Traditional sentiment analysis struggles with "implicit sentiment" - emotional tones that are subtle, sarcastic, or indirectly expressed. 
                                 For example, the sentence <em>"and if you're not nearly moved to tears by a couple of scenes, you've got ice water in your veins"</em> is technically a conditional statement, 
                                 but it carries a "Very Positive" sentiment regarding the movie's emotional impact. 
                             </p>
@@ -115,15 +138,18 @@
                 <div class="row align-items-center">
                     <div class="col-md-6">
                         <div class="work-single-content">
-                            <h3>Key Results & Contributions</h3>
+                            <h3>Key Results & Insights</h3>
                             <p>
-                                Our Hybrid Prompting strategy significantly outperformed the zero-shot baseline on the Mistral-7B model, achieving a <strong>29% accuracy</strong> and <strong>25% Macro F1 score</strong>. 
+                                <strong>1. Massive Relative Improvement:</strong> While implicit sentiment on a 5-point scale is notoriously difficult for open-source models, our Hybrid Prompting strategy achieved a <strong>~10x performance increase</strong> over the zero-shot baseline (improving from 3% to 29% accuracy on Mistral-7B). This highlights the power of structured reasoning scaffolds for smaller models.
                             </p>
                             <p>
-                                Interestingly, for the more capable GPT-4o Mini, a simpler <strong>Role-Play strategy</strong> performed best (57.51% Accuracy), suggesting that complex hybrid prompts can sometimes over-complicate tasks for highly capable models.
+                                <strong>2. Engineering Complexity:</strong> We successfully orchestrated a complex inference pipeline involving 5 distinct agent personas debating in real-time. This demonstrated that multi-agent systems can extract nuance that single-pass prompting misses.
                             </p>
                             <p>
-                                <strong>My Contribution:</strong> I led the design and implementation of the Multi-Agent Debate and Hybrid Prompting strategies for the Mistral-7B model and conducted the failure analysis.
+                                <strong>3. Research Insight:</strong> Interestingly, on the highly capable GPT-4o Mini, simpler Role-Play strategies outperformed complex Hybrid ones. This provided a critical research insight: "Prompt Engineering" has diminishing returns on state-of-the-art models, where over-complication can introduce noise rather than clarity.
+                            </p>
+                            <p>
+                                <strong>My Contribution:</strong> I led the architecture and implementation of the Multi-Agent Debate system and the Hybrid Prompting strategies for the Mistral-7B model experiments.
                             </p>
                         </div>
                     </div>
@@ -137,6 +163,7 @@
 
             </div>
         </section>
+        
         <section id="call-to-action">
             <div class="container">
                 <div class="row">
@@ -172,7 +199,9 @@
                     </div>
                 </div>
             </div>
-        </footer> <script src="plugins/jQurey/jquery.min.js"></script>
+        </footer> 
+        
+        <script src="plugins/jQurey/jquery.min.js"></script>
         <script src="plugins/form-validation/jquery.form.js"></script> 
         <script src="plugins/form-validation/jquery.validate.min.js"></script>
         <script src="plugins/slick/slick.min.js"></script>
