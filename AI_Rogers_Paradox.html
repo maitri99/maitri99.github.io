@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" href="favicon.ico">
+        <title>AI-Rogers-Paradox@Maitri</title>
+        <meta name="description" content="Research on AI Safety and Cultural Evolution">
+        <meta name="keywords" content="Data Science, ABM, Python, AI Safety">
+        <meta name="author" content="Maitri">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="plugins/ionicons/ionicons.min.css">
+        <link rel="stylesheet" href="plugins/animate-css/animate.css">
+        <link rel="stylesheet" href="plugins/slider/slider.css">
+        <link rel="stylesheet" href="plugins/slick/slick.css">
+        <link rel="stylesheet" href="plugins/facncybox/jquery.fancybox.css">
+        <link rel="stylesheet" href="plugins/hover/hover-min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body> 
+        <section class="top-bar animated-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home
+                                            <span class="sr-only">(current)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="global-page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block">
+                            <h2>Diversity vs. Efficiency</h2>
+                            <div class="portfolio-meta">
+                                <span>December 2025</span>|
+                                <span>Revisiting Rogers’ Paradox with Heterogeneous Agents on a Knowledge Map</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="work-single">
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="work-single-content">
+                            <h3>Uncovering the Trade-off Between Mastery & Innovation</h3>
+                            <p>
+                                <strong>Tech Stack:</strong> Python, NumPy, SciPy, Numba (JIT), Agent-Based Modeling (ABM), Matplotlib.<br>
+                                <strong>Domain:</strong> AI Safety, Complex Systems, Cultural Evolution.
+                            </p>
+                            <p>
+                                In the modern era, humans increasingly learn from AI systems trained on aggregated human data. Classical "Rogers' Paradox" suggests that if social learning is too cheap, innovation stops. We extended this to the AI era: <strong>Does having a super-intelligent AI helper actually make us collectively stupider in the long run?</strong>
+                            </p>
+                            <p>
+                                Previous models treated knowledge as binary (you know it or you don't). [cite_start]We built a novel <strong>Agent-Based Model (ABM)</strong> with a branching "Knowledge Map" to simulate cumulative innovation and the tension between "safe" local optima and "risky" global optima[cite: 1, 4].
+                            </p>
+                            
+                            <h4>The Knowledge Map Architecture</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>
+                                        We simulated 500 agents traversing a structured environment:
+                                    </p>
+                                    <ul>
+                                        <li><strong>Low-Risk Branch:</strong> Offers fast, reliable rewards but caps at a local optimum (V ≈ 0.92).</li>
+                                        <li><strong>High-Risk Branch:</strong> Requires a costly "fitness dip" to explore but leads to the Global Optimum (V ≈ 0.95) 
+
+[Image of knowledge map architecture]
+.</li>
+                                    </ul>
+                                    <p>
+                                        We tested three AI strategies: <strong>No AI</strong> (Baseline), <strong>Modal AI</strong> (Copies majority), and <strong>Prestige AI</strong> (Copies the best agent).
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="images/about/knowledge_map.png" class="img-fluid" alt="Branching Knowledge Map Diagram" style="border: 1px solid #ddd; padding: 5px;">
+                                    <p class="text-center text-muted"><small>Fig 1: The Branching Knowledge Map.</small></p>
+                                </div>
+                            </div>
+
+                            <h4>Key Findings: The Prestige Trap</h4>
+                            <p>
+                                Our results revealed a fundamental conflict. The <strong>Prestige AI</strong> (which mimics RLHF or "best-practices" systems) was incredibly efficient, converging to the global optimum in just ~5 generations. However, this efficiency killed discovery.
+                            </p>
+                            
+                            <div class="row">
+                                <div class="col-md-12">
+                                     <img src="images/about/mastery vs discovery.png" class="img-fluid" alt="Prestige AI Results Plots">
+                                    [cite_start]<p class="text-muted"><small>Fig 2: Prestige AI achieves high mastery (top) but suppresses discovery (middle)[cite: 4].</small></p>
+                                </div>
+                            </div>
+                            
+                            <p>
+                                Once the AI identified the "best" path, it broadcasted it to everyone. [cite_start]This removed the incentive for individual agents to explore, causing the <strong>High-Risk Discovery Rate to drop by ~80%</strong> compared to the baseline[cite: 4].
+                            </p>
+
+                            <h4>Can Diversity Save Us?</h4>
+                            <p>
+                                We hypothesized that introducing "risk-taking" agents (Exploration Heterogeneity) would rescue innovation.
+                            </p>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <p>
+                                        <strong>Without AI (Blue Line):</strong> Diversity helps! We see an "inverted-U" curve where moderate diversity maximizes discovery .
+                                    </p>
+                                    <p>
+                                        <strong>With Prestige AI (Green Line):</strong> The line is flat. The AI's signal is so strong that it overrides the natural diversity of the population. [cite_start]The AI effectively "homogenizes" human behavior, regardless of how diverse the humans naturally are[cite: 4].
+                                    </p>
+                                </div>
+                                <div class="col-md-5">
+                                    <img src="images/about/diversity plot.png" class="img-fluid" alt="Inverted-U Diversity Plot">
+                                </div>
+                            </div>
+
+                            <h4>Summary Metrics</h4>
+                            <table class="table table-bordered table-striped">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>Metric</th>
+                                        <th>No AI (Baseline)</th>
+                                        <th>Prestige AI</th>
+                                        <th>Impact</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Mastery (Q<sub>M</sub>)</strong></td>
+                                        <td>~0.93 (Oscillates)</td>
+                                        <td><strong>~0.95 (Stable)</strong></td>
+                                        <td>AI improves Stability</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Convergence Time (T<sub>c</sub>)</strong></td>
+                                        <td>~19 Generations</td>
+                                        <td><strong>~5 Generations</strong></td>
+                                        <td>AI is 4x Faster</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Discovery Rate (R<sub>D</sub>)</strong></td>
+                                        <td><strong>High (Sustained)</strong></td>
+                                        <td>Low (Collapsed)</td>
+                                        <td>AI kills Innovation</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h4>Conclusion & Future Work</h4>
+                            <p>
+                                This project demonstrates that AI systems designed to optimize for <strong>current performance</strong> (Prestige) may inadvertently destroy the <strong>exploratory capacity</strong> needed for future breakthroughs. For Data Science, this suggests we must design RAG and Recommender systems that preserve "exploration windows" rather than creating winner-take-all feedback loops.
+                            </p>
+
+                            <div class="mt-4">
+                                <a href="https://drive.google.com/file/d/1pV6Z1wd5lZlsvDDWbw6YimIvRyoRh0AU/view?usp=drive_link" class="btn btn-default btn-main" target="_blank">
+                                    <i class="ion-ios-cloud-download"></i> Read Full Research Paper
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="work-single-sidebar">
+                             <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+                                <img src="images/about/knowledge map.png" alt="Project Overview" class="img-fluid">
+                                <p class="mt-2 text-center"><em>The "Valley of Death" in our simulation map.</em></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="call-to-action">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block">
+                            <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">Interested in this research?</h2>
+                            <a href="mailto:maitripatel1299@gmail.com" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Let's chat!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="container">
+                <div class="row content-justify-between">
+                    <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+                        <p class="copyright">Copyright: Design and Developed by Maitri Patel</p>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <ul class="social text-center text-md-right text-lg-right">
+                            <li>
+                                <a href="https://github.com/maitri99" class="Github">
+                                    <i class="ion-social-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/maitri-patel-7269bb148" class="Linkedin">
+                                    <i class="ion-social-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer> <script src="plugins/jQurey/jquery.min.js"></script>
+        <script src="plugins/form-validation/jquery.form.js"></script> 
+        <script src="plugins/form-validation/jquery.validate.min.js"></script>
+        <script src="plugins/slick/slick.min.js"></script>
+        <script src="plugins/bootstrap/bootstrap.min.js"></script>
+        <script src="plugins/wow-js/wow.min.js"></script>
+        <script src="plugins/slider/slider.js"></script>
+        <script src="plugins/facncybox/jquery.fancybox.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
